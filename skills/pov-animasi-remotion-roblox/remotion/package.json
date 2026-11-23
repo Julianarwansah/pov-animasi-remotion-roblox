@@ -1,10 +1,15 @@
 {
-  "name": "pov-animasi-remotion",
+  "name": "pov-animasi-remotion-roblox",
   "private": true,
   "type": "module",
   "scripts": {
-    "studio": "remotion studio src/entries/Rbx1.tsx",
-    "stills": "node scripts/stills.mjs"
+    "studio": "remotion studio src/entries/Rbx5.tsx",
+    "kanal": "node scripts/pakai-kanal.mjs",
+    "stills": "node scripts/stills.mjs",
+    "audit": "node scripts/audit.mjs",
+    "gabung": "node scripts/gabung.mjs",
+    "cek": "tsc -p .",
+    "profil": "node scripts/profil.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "^8.18.0",

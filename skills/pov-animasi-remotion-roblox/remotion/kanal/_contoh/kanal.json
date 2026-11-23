@@ -1,0 +1,12 @@
+{
+  "nama": "Nama Channel Baru",
+  "handle": "@namachannel",
+  "bahasa": "en-US",
+  "teksProfil": ["KATA1", "KATA2"],
+  "warnaProfil": ["#ffd21f", "#ff3a3a"],
+  "ajakanKomentar": "Comment below 👇",
+  "ajakanLanjut": "The next part follows your choice",
+  "ajakanFollow": "Follow for more stories",
+  "deskripsiFollow": "🔔 Follow Nama Channel Baru for more stories.",
+  "tagarDasar": ["#horror", "#pov", "#scarystories", "#animation", "#shorts"]
+}

@@ -9,8 +9,8 @@ import { EffectComposer } from "@react-three/postprocessing";
 import { ToneMappingEffect, ToneMappingMode } from "postprocessing";
 import { loadFont } from "@remotion/fonts";
 import { World, LINES, TOTAL, FREEZE, S0, FPS, COLD, coldFrame } from "./dunia";
-import { InkPass, noInkFallback } from "./ink";
-import { FisheyeEffect } from "./fisheye";
+import { InkPass, noInkFallback } from "../inti/ink";
+import { FisheyeEffect } from "../inti/fisheye";
 
 export const RBX1_FRAMES = TOTAL;
 const W = 1080, H = 1920;

@@ -4,8 +4,8 @@
 // Sumbu: lorong x -1.6..1.6, z 0..14; labirin cermin x -4..4, z 14..26; rel di x 0.9.
 import * as THREE from "three";
 import TL from "./timeline.json";
-import { FPS, V3, makeTL, ease, lerp, lerp3, hh, span, add, shake, breathe, box, ball, plane, glow, canvasTex, signTex, PovArms, Pov, povLow, povUp, Cam, applyCam, RAMP, CYLG } from "../f13/kit";
-import { Hoppy, makeMax, Phone, enableShadows } from "../bl/park";
+import { FPS, V3, makeTL, ease, lerp, lerp3, hh, span, add, shake, breathe, box, ball, plane, glow, canvasTex, signTex, PovArms, Pov, povLow, povUp, Cam, applyCam, RAMP, CYLG } from "../inti/kit";
+import { Hoppy, makeMax, Phone, enableShadows } from "../taman/park";
 
 export const T = makeTL(TL);
 const { S0, E0, sceneAt, mouthAt } = T;

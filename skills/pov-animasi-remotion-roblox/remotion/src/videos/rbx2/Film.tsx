@@ -1,5 +1,5 @@
 // FLOOR 13 — Part 2 (Shorts 1080x1920), layar bersih tanpa HUD atas.
-import { makeFilm } from "../f13/Shell";
+import { makeFilm } from "../inti/Shell";
 import { World, T, FREEZE, COLD, coldFrame } from "./dunia";
 
 const { S0, LINES, TOTAL } = T;

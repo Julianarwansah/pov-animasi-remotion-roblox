@@ -1,0 +1,16 @@
+{
+  "catatan": "Peta episode. Nomor N dipakai semua alat: naskah/epN.json, vox_epN/, epN/ (vo, timeline, sfx.py, mix.wav), src/videos/rbxN/, entry src/entries/RbxN.tsx, audit 'node scripts/audit.mjs N'.",
+  "serial": {
+    "floor-13": { "judul": "FLOOR 13", "kanal": "bloxy-nightmares", "episode": [1, 2, 3, 4] },
+    "bloxy-land": { "judul": "BLOXY LAND AFTER HOURS", "kanal": "bloxy-nightmares", "episode": [5, 6, 7] }
+  },
+  "episode": {
+    "1": { "serial": "floor-13", "part": 1, "id": "Rbx1", "hasil": "hasil/floor-13/Floor13-Part1.mp4", "catatan": "versi awal: masih memakai HUD chat di atas (atas permintaan user dibiarkan)" },
+    "2": { "serial": "floor-13", "part": 2, "id": "Rbx2", "hasil": "hasil/floor-13/Floor13-Part2.mp4" },
+    "3": { "serial": "floor-13", "part": 3, "id": "Rbx3", "hasil": "hasil/floor-13/Floor13-Part3.mp4" },
+    "4": { "serial": "floor-13", "part": 4, "id": "Rbx4", "hasil": "hasil/floor-13/Floor13-Part4.mp4", "akhir": true },
+    "5": { "serial": "bloxy-land", "part": 1, "id": "Rbx5", "hasil": "hasil/bloxy-land/BloxyLand-Part1.mp4" },
+    "6": { "serial": "bloxy-land", "part": 2, "id": "Rbx6", "hasil": "hasil/bloxy-land/BloxyLand-Part2.mp4" },
+    "7": { "serial": "bloxy-land", "part": 3, "id": "Rbx7", "hasil": "hasil/bloxy-land/BloxyLand-Part3.mp4", "akhir": true }
+  }
+}

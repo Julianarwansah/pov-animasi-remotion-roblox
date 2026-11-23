@@ -3,8 +3,8 @@
 // memegang topi Max; besok paginya taman ramai, maskot baru biru memakai topi merah Max melambai ke kamera.
 import * as THREE from "three";
 import TL from "./timeline.json";
-import { FPS, V3, makeTL, ease, lerp, lerp3, hh, span, add, shake, breathe, box, ball, plane, glow, PovArms, Pov, povLow, povUp, Cam, applyCam, Orang } from "../f13/kit";
-import { buildPark, Park, Hoppy, Phone, enableShadows, moonLight, WHEEL, HAUNT } from "../bl/park";
+import { FPS, V3, makeTL, ease, lerp, lerp3, hh, span, add, shake, breathe, box, ball, plane, glow, PovArms, Pov, povLow, povUp, Cam, applyCam, Orang } from "../inti/kit";
+import { buildPark, Park, Hoppy, Phone, enableShadows, moonLight, WHEEL, HAUNT } from "../taman/park";
 
 export const T = makeTL(TL);
 const { S0, E0, sceneAt, mouthAt } = T;

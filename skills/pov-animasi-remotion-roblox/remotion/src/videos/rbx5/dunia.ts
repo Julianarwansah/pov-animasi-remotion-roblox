@@ -3,8 +3,8 @@
 // (topinya tertinggal), Hoppy tepat di belakangmu. Bayangan asli dari cahaya bulan, senter ponsel di tangan.
 import * as THREE from "three";
 import TL from "./timeline.json";
-import { FPS, V3, makeTL, ease, lerp, lerp3, hh, span, add, shake, breathe, PovArms, Pov, povLow, povUp, Cam, applyCam } from "../f13/kit";
-import { buildPark, Park, Hoppy, makeMax, capProp, Phone, enableShadows, moonLight, CARO } from "../bl/park";
+import { FPS, V3, makeTL, ease, lerp, lerp3, hh, span, add, shake, breathe, PovArms, Pov, povLow, povUp, Cam, applyCam } from "../inti/kit";
+import { buildPark, Park, Hoppy, makeMax, capProp, Phone, enableShadows, moonLight, CARO } from "../taman/park";
 
 export const T = makeTL(TL);
 const { S0, E0, sceneAt, mouthAt } = T;

@@ -2,7 +2,7 @@
 // ponsel + senter di tangan POV, bayangan, dan pembangun taman (gerbang, jalan, komidi putar, bianglala,
 // lampu jalan, kios, rumah hantu, pohon, pagar). Satuan meter; gerbang di z = 0, jalan utama ke +z.
 import * as THREE from "three";
-import { box, ball, plane, glow, toon, canvasTex, signTex, hh, lerp, Orang, CYLG, BOXG, RAMP, SKIN } from "../f13/kit";
+import { box, ball, plane, glow, toon, canvasTex, signTex, hh, lerp, Orang, CYLG, BOXG, RAMP, SKIN } from "../inti/kit";
 
 /** semua mesh plastik memberi & menerima bayangan (yang bercahaya/transparan tidak) */
 export const enableShadows = (root: THREE.Object3D) => root.traverse((o) => {

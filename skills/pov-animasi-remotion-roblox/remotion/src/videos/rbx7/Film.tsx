@@ -1,9 +1,9 @@
 // BLOXY LAND After Hours — Part 3 FINAL (Shorts 1080x1920), layar bersih. Peralihan "THE NEXT MORNING", akhir THE END.
 import React from "react";
 import { AbsoluteFill } from "remotion";
-import { makeFilm, txt } from "../f13/Shell";
+import { makeFilm, KANAL, txt } from "../inti/Shell";
 import { World, T, FREEZE, COLD, coldFrame } from "./dunia";
-import { FPS } from "../f13/kit";
+import { FPS } from "../inti/kit";
 
 const { S0, E0, LINES, TOTAL } = T;
 export const RBX7_FRAMES = TOTAL;
@@ -26,7 +26,7 @@ const Akhir: React.FC<{ f: number }> = ({ f }) => {
       <div style={{ ...txt("#ffd21f", 120), opacity: pop(0.4), letterSpacing: 3 }}>BLOXY LAND</div>
       <div style={{ ...txt("#ffffff", 96), opacity: pop(0.9) }}>THE END</div>
       <div style={{ ...txt("#ff9ed2", 56, true), opacity: pop(1.8), marginTop: 30 }}>...or is it?</div>
-      <div style={{ ...txt("#7ae0ff", 44), opacity: pop(2.6), marginTop: 60 }}>Follow for more stories 🎡</div>
+      <div style={{ ...txt("#7ae0ff", 44), opacity: pop(2.6), marginTop: 60 }}>{KANAL.ajakanFollow} 🎡</div>
     </AbsoluteFill>
   );
 };

@@ -9,12 +9,14 @@ import { useThree } from "@react-three/fiber";
 import { EffectComposer } from "@react-three/postprocessing";
 import { ToneMappingEffect, ToneMappingMode } from "postprocessing";
 import { loadFont } from "@remotion/fonts";
-import { InkPass, noInkFallback } from "../rbx1/ink";
-import { FisheyeEffect } from "../rbx1/fisheye";
+import { InkPass, noInkFallback } from "./ink";
+import { FisheyeEffect } from "./fisheye";
 import { FPS, Line } from "./kit";
+import KANAL from "../../kanal.json";
 
 const W = 1080, H = 1920;
 export const FAMILY = "Fredoka";
+export { KANAL };
 export type WorldLike = { root: THREE.Object3D; update: (f: number, cam: THREE.PerspectiveCamera) => void };
 
 const Inner: React.FC<{ f: number; make: () => WorldLike }> = ({ f, make }) => {
@@ -98,7 +100,7 @@ const Pilihan: React.FC<{ f: number; a: number; A: Opsi; B: Opsi }> = ({ f, a, A
       <div style={{ opacity: pop(0.35) }}><Tombol {...A} s={sc(0.35)} /></div>
       <div style={{ ...txt("#ffd84a", 60), opacity: pop(0.6) }}>OR</div>
       <div style={{ opacity: pop(0.8) }}><Tombol {...B} s={sc(0.8)} /></div>
-      <div style={{ ...txt("#ffffff", 48), opacity: pop(1.3), marginTop: 20 }}>Comment below 👇<br /><span style={{ color: "#ffd84a", fontSize: 40 }}>The next part follows your choice</span></div>
+      <div style={{ ...txt("#ffffff", 48), opacity: pop(1.3), marginTop: 20 }}>{KANAL.ajakanKomentar}<br /><span style={{ color: "#ffd84a", fontSize: 40 }}>{KANAL.ajakanLanjut}</span></div>
     </AbsoluteFill>
   );
 };

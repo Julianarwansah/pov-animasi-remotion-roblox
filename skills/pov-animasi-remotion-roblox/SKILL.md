@@ -11,20 +11,31 @@ Contoh lengkap: **Floor 13** (`rbx1`–`rbx4`, lift hotel) dan **Bloxy Land Afte
 ## Aturan wajib (dari user)
 1. **Cerita orisinal, baru tiap serial.** Jangan memakai cerita yang sudah dipakai channel lain (misalnya pom bensin/kasir). Tawarkan 3–4 ide cerita dulu, minta user memilih, lalu rencanakan jumlah episode sampai tamat.
 2. **Bahasa Inggris USA** untuk dialog, caption, dan kartu pilihan.
-3. **Layar bersih:** tanpa chat game, daftar pemain, atau judul di bagian atas layar. Hanya caption tengah, teks bunyi, dan kartu pilihan / layar akhir (`makeFilm` di `f13/Shell.tsx`).
+3. **Layar bersih:** tanpa chat game, daftar pemain, atau judul di bagian atas layar. Hanya caption tengah, teks bunyi, dan kartu pilihan / layar akhir (`makeFilm` di `inti/Shell.tsx`).
 4. **Audio hanya rekaman asli yang aman dimonetisasi:** efek suara DAN musik latar harus rekaman asli berlisensi **CC0** (bukan buatan sintesis, bukan CC-BY-NC). Cari dengan `suara/cari_sfx.py`, cek semua dengan `--cek` sebelum mix.
 5. **Tanpa suara statis/desis:** tidak ada desis radio, dengung neon/listrik, loop glitch, atau filter telepon (highpass/lowpass) pada suara tokoh. Kerataan spektrum tiap efek ≤ 0,15.
 6. **Tidak ada yang menembus objek apa pun:** jalankan `node scripts/audit.mjs <N>` dengan timeline final; hasilnya harus **0 pasangan tembus** sebelum render.
 
+## Channel (bisa dipakai channel YouTube mana pun)
+- Semua teks yang terikat channel ada di `remotion/kanal/<nama>/kanal.json`: nama, handle, teks & warna foto profil, ajakan komentar/lanjut/follow, deskripsi follow, tagar dasar. Templat: `kanal/_contoh/`.
+- `npm run kanal <nama>` menjadikannya channel aktif (`src/kanal.json`). Kartu pilihan dan kartu akhir membaca file itu.
+- `npm run profil` → 4 varian foto profil 1024×1024 + `pratinjau-bulat.png` di `kanal/<nama>/profil/`.
+- Judul & deskripsi per channel di `kanal/<nama>/judul-deskripsi.md` (bahasa Inggris, judul ≤ 60 karakter, akhiri dengan pertanyaan pilihan + `deskripsiFollow`).
+- `daftar-episode.json` memetakan nomor episode → serial, part, id komposisi, file hasil di `hasil/<serial>/`.
+- Hindari kata "Roblox" di nama channel/judul (merek dagang, bukan konten resmi).
+
 ## Isi
 | Path | Fungsi |
 |---|---|
-| `remotion/src/videos/f13/kit.ts` | util, material plastik toon, tokoh balok R6 `Orang` (+`makeLily`, `makeNoob`), `buildLift`, `buildHall`, `PovArms`, `makeTL` |
-| `remotion/src/videos/f13/Shell.tsx` | `makeFilm`: tinta tipis → tone mapping → fisheye, vinyet, kilat, denyut merah, caption, bunyi, kartu pilihan / `Ending`, opsi `shadows` |
-| `remotion/src/videos/f13/audit.ts` | audit tembus: AABB + verifikasi OBB, kedalaman > 3 cm |
-| `remotion/src/videos/bl/park.ts` | maskot `Hoppy`, `makeMax`, `Phone` (senter + bayangan), `buildPark` (gerbang, komidi putar, bianglala, lampu, kios, rumah hantu, siang/malam), `enableShadows`, `moonLight` |
+| `remotion/src/videos/inti/` | `kit.ts`, `Shell.tsx`, `audit.ts`, `ink.ts`, `fisheye.ts` (dipakai semua serial) |
+| `remotion/src/videos/inti/kit.ts` | util, material plastik toon, tokoh balok R6 `Orang` (+`makeLily`, `makeNoob`), `buildLift`, `buildHall`, `PovArms`, `makeTL` |
+| `remotion/src/videos/inti/Shell.tsx` | `makeFilm`: tinta tipis → tone mapping → fisheye, vinyet, kilat, denyut merah, caption, bunyi, kartu pilihan / `Ending`, opsi `shadows` |
+| `remotion/src/videos/inti/audit.ts` | audit tembus: AABB + verifikasi OBB, kedalaman > 3 cm |
+| `remotion/src/videos/taman/park.ts` | maskot `Hoppy`, `makeMax`, `Phone` (senter + bayangan), `buildPark` (gerbang, komidi putar, bianglala, lampu, kios, rumah hantu, siang/malam), `enableShadows`, `moonLight` |
 | `remotion/src/videos/rbxN/` | satu episode = `dunia.ts` (set + kamera + tangan POV per adegan) + `Film.tsx` + `timeline.json`; entry `src/entries/RbxN.tsx` |
-| `remotion/scripts/` | `stills.mjs` (gambar diam), `audit.mjs` (audit tembus) |
+| `remotion/scripts/` | `stills.mjs` (gambar diam), `audit.mjs` (audit tembus), `pakai-kanal.mjs`, `profil.mjs`, `gabung.mjs` (video + mix → hasil siap unggah) |
+| `remotion/kanal/` | konfigurasi & identitas tiap channel |
+| `remotion/README.md` | susunan folder proyek + langkah singkat |
 | `suara/` | `vox_ep.py`, `cek_vo.py`, `buat_timeline.py`, `mix.py`, `cari_sfx.py`, `cek_sfx.py` |
 | `contoh/epN/` | naskah JSON + isyarat efek suara tiap episode contoh |
 
@@ -45,7 +56,7 @@ Contoh lengkap: **Floor 13** (`rbx1`–`rbx4`, lift hotel) dan **Bloxy Land Afte
 7. **Audio:** tulis `epN/sfx.py` (rekaman CC0 saja), lalu
    `python suara/cari_sfx.py --cek <semua id fs->` → semua LOLOS, lalu `python suara/mix.py epN epN/sfx.py --lufs -14`.
 8. **Render:** `npx remotion render src/entries/RbxN.tsx RbxN out/vN.mp4 --gl=angle --concurrency=4 --crf=18`, lalu
-   `ffmpeg -i out/vN.mp4 -i epN/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest Judul-PartN.mp4`. Cek durasi, frame, LUFS, lembar kontak.
+   `npm run gabung N` (memindah render ke `hasil/<serial>/tanpa-audio/` dan menggabungkan `epN/mix.wav` → `hasil/<serial>/`). Cek durasi, frame, LUFS, lembar kontak. Mix ulang audio saja: ubah `sfx.py` → `mix.py` → `npm run gabung N`.
 
 ## Mencari efek suara & musik (CC0, rekaman asli)
 - `python suara/cari_sfx.py "music box" 12` → daftar id + lisensi (dibaca dari halaman freesound.org/s/N) + kerataan; hanya **CC0** dan kerataan ≤ 0,15 yang LOLOS. Hasil tercatat di `sfx_cache/lisensi.json` (bukti lisensi).

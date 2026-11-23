@@ -1,12 +1,12 @@
 // Komposisi audit "tembus": satu frame yang menjalankan seluruh dunia episode dan mencetak hasil ke konsol.
 import React, { useState } from "react";
 import { registerRoot, Composition, AbsoluteFill, delayRender, continueRender } from "remotion";
-import { runAudit } from "../videos/f13/audit";
+import { runAudit } from "../videos/inti/audit";
 import * as E5 from "../videos/rbx5/dunia";
 import * as E6 from "../videos/rbx6/dunia";
 import * as E7 from "../videos/rbx7/dunia";
 import * as THREE from "three";
-import { Orang, box } from "../videos/f13/kit";
+import { Orang, box } from "../videos/inti/kit";
 // adegan uji: A tembus 30 cm ke dinding (harus terdeteksi), B hanya menempel (tidak boleh terdeteksi), C diputar 45° dekat dinding miring
 class Uji { root = new THREE.Group(); constructor() {
   box(this.root, 0.1, 3, 4, "#888888", 0, 1.5, 0);

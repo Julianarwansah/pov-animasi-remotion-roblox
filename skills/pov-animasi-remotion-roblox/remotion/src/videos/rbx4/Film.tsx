@@ -1,9 +1,9 @@
 // FLOOR 13 — Part 4 FINAL (Shorts 1080x1920), layar bersih. Akhir: dialog "Disconnected" lalu THE END.
 import React from "react";
 import { AbsoluteFill } from "remotion";
-import { makeFilm, txt, FAMILY } from "../f13/Shell";
+import { makeFilm, KANAL, txt, FAMILY } from "../inti/Shell";
 import { World, T, FREEZE, COLD, coldFrame } from "./dunia";
-import { FPS, hh } from "../f13/kit";
+import { FPS, hh } from "../inti/kit";
 
 const { S0, E0, LINES, TOTAL } = T;
 export const RBX4_FRAMES = TOTAL;
@@ -36,7 +36,7 @@ const Ending: React.FC<{ f: number }> = ({ f }) => {
       <div style={{ ...txt("#ff4a4a", 120), opacity: pop(0.2), letterSpacing: 4 }}>FLOOR 13</div>
       <div style={{ ...txt("#ffffff", 96), opacity: pop(0.7) }}>THE END</div>
       <div style={{ ...txt("#ff9ed2", 56, true), opacity: pop(1.6), marginTop: 30 }}>...or is it?</div>
-      <div style={{ ...txt("#ffd84a", 44), opacity: pop(2.4), marginTop: 60 }}>Follow for more stories 👻</div>
+      <div style={{ ...txt("#ffd84a", 44), opacity: pop(2.4), marginTop: 60 }}>{KANAL.ajakanFollow} 👻</div>
     </AbsoluteFill>
   );
 };

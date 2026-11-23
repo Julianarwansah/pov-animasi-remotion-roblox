@@ -7,7 +7,7 @@ import TL from "./timeline.json";
 import {
   FPS, V3, makeTL, ease, lerp, lerp3, hh, span, add, shake, breathe, box, plane, glow, canvasTex, signTex,
   buildLift, buildHall, makeLily, PovArms, Pov, povLow, povUp, LH, Cam, applyCam, Lift, Hall, Orang, RAMP,
-} from "../f13/kit";
+} from "../inti/kit";
 
 export const T = makeTL(TL);
 const { S0, E0, sceneAt, mouthAt } = T;
