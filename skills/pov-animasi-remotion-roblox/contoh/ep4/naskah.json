@@ -1,0 +1,130 @@
+{
+ "judul": "Floor 13 - Part 4 (Final)",
+ "awal": 1.5,
+ "format": "potret",
+ "catatan": "Episode terakhir, lanjutan RUN INTO ROOM 2007. Twist: kamu sudah menjadi Guest. Tanpa kartu pilihan, diakhiri layar putus koneksi + THE END. Fiksi orisinal, bahasa Inggris USA.",
+ "baris": [
+  {
+   "id": "g01",
+   "scene": "masuk",
+   "who": null,
+   "dur": 1.3
+  },
+  {
+   "id": "g02",
+   "scene": "masuk",
+   "who": "noob",
+   "emo": "netral",
+   "text": "I made it. I'm safe.",
+   "jeda": 0.4,
+   "arah": "(breathless and relieved, panting, shaky laugh)"
+  },
+  {
+   "id": "g03",
+   "scene": "kasur",
+   "who": null,
+   "dur": 1.4
+  },
+  {
+   "id": "g04",
+   "scene": "kasur",
+   "who": "noob",
+   "emo": "bisik",
+   "text": "Hey... who are you?",
+   "jeda": 0.4,
+   "arah": "(nervous scared whisper, hesitant)"
+  },
+  {
+   "id": "g05",
+   "scene": "noleh",
+   "who": "tiruan",
+   "emo": "bisik",
+   "text": "I'm you. The real you.",
+   "jeda": 0.4,
+   "arah": "(creepy slow whisper, eerie and calm, smiling, sinister)",
+   "fx": "aecho=0.7:0.5:50:0.2"
+  },
+  {
+   "id": "g06",
+   "scene": "noleh",
+   "who": "noob",
+   "emo": "takut",
+   "text": "That's impossible. I'm right here!",
+   "arah": "(frightened and confused, voice trembling, rising panic)"
+  },
+  {
+   "id": "g07",
+   "scene": "tangan_abu",
+   "who": null,
+   "dur": 1.8
+  },
+  {
+   "id": "g08",
+   "scene": "tangan_abu",
+   "who": "noob",
+   "emo": "bisik",
+   "text": "My hands... what's happening to me?",
+   "jeda": 0.3,
+   "arah": "(horrified whisper, shaking, breaking down)"
+  },
+  {
+   "id": "g09",
+   "scene": "cermin",
+   "who": "tiruan",
+   "emo": "bisik",
+   "text": "Thank you for holding the door.",
+   "jeda": 0.5,
+   "arah": "(creepy calm whisper, slow, cold and grateful, sinister)",
+   "fx": "aecho=0.7:0.5:50:0.2"
+  },
+  {
+   "id": "g10",
+   "scene": "ketuk",
+   "who": null,
+   "dur": 1.2
+  },
+  {
+   "id": "g11",
+   "scene": "ketuk",
+   "who": "lily",
+   "emo": "bisik",
+   "text": "Room service... for the new guest.",
+   "jeda": 0.3,
+   "arah": "(creepy sweet girl voice behind a door, slow and singsong, sinister)",
+   "fx": "aecho=0.6:0.4:40:0.2"
+  },
+  {
+   "id": "g12",
+   "scene": "teriak",
+   "who": "noob",
+   "emo": "teriak",
+   "text": "No! I'm not a guest! I'm...",
+   "arah": "(screaming desperately, panicked, voice cut off suddenly)"
+  },
+  {
+   "id": "g13",
+   "scene": "putus",
+   "who": null,
+   "dur": 3.4
+  },
+  {
+   "id": "g14",
+   "scene": "akhir",
+   "who": null,
+   "dur": 4.5
+  }
+ ],
+ "tokoh": {
+  "noob": {
+   "desain": "(young American teenage boy gamer, about seventeen, casual natural voice, relaxed and a little sarcastic)",
+   "ref_teks": "Man, this hotel is so quiet tonight. Nobody is in the lobby, and my room is all the way at the top."
+  },
+  "lily": {
+   "desain": "(young American girl, about fourteen, soft sweet voice, a little breathy)",
+   "ref_teks": "I lost my friends somewhere in this hotel, and now I can't remember which floor my room is on."
+  },
+  "tiruan": {
+   "pakai": "noob"
+  }
+ }
+}

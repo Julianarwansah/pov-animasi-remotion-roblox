@@ -1,0 +1,38 @@
+{
+ "judul": "Bloxy Land After Hours - Part 2",
+ "awal": 1.5,
+ "format": "potret",
+ "catatan": "Lanjutan pilihan HIDE IN THE HAUNTED HOUSE: rumah hantu, walkie-talkie Max, labirin cermin penuh Hoppy. Fiksi orisinal, bahasa Inggris USA.",
+ "baris": [
+  {"id": "g01", "scene": "masuk", "who": null, "dur": 1.4},
+  {"id": "g02", "scene": "masuk", "who": "noob", "emo": "bisik", "text": "Okay. Just stay quiet. It can't find me in here.", "jeda": 0.4,
+   "arah": "(scared breathless whisper, trying to calm himself)"},
+  {"id": "g03", "scene": "walkie", "who": null, "dur": 1.4},
+  {"id": "g04", "scene": "walkie", "who": "noob", "emo": "bisik", "text": "That's Max's walkie-talkie...", "jeda": 0.3,
+   "arah": "(quiet worried whisper, recognizing something)"},
+  {"id": "g05", "scene": "walkie_bunyi", "who": "max", "emo": "bisik", "text": "Hey... can you hear me? I'm in the mirror room. Come find me.", "jeda": 0.4,
+   "arah": "(teenage boy whispering urgently through a walkie-talkie, scared but hopeful)"},
+  {"id": "g06", "scene": "lorong_cermin", "who": null, "dur": 1.8},
+  {"id": "g07", "scene": "lorong_cermin", "who": "noob", "emo": "bisik", "text": "Max? Where are you?", "jeda": 0.4,
+   "arah": "(nervous whisper, calling quietly)"},
+  {"id": "g08", "scene": "cermin_max", "who": "max", "emo": "netral", "text": "Over here. Keep walking. You're so close.", "jeda": 0.4,
+   "arah": "(calm and slow, strangely flat and too friendly, slightly wrong)", "fx": "aecho=0.7:0.5:60:0.3"},
+  {"id": "g09", "scene": "cermin_hoppy", "who": null, "dur": 1.6},
+  {"id": "g10", "scene": "cermin_hoppy", "who": "noob", "emo": "takut", "text": "That's not Max... that's not Max!", "jeda": 0.3,
+   "arah": "(horrified realization, voice rising in panic)"},
+  {"id": "g11", "scene": "banyak_hoppy", "who": "hoppy", "emo": "bisik", "text": "Found you.", "jeda": 0.4,
+   "arah": "(deep mascot voice, slow and delighted, sinister whisper)", "fx": "aecho=0.8:0.6:70:0.35"},
+  {"id": "g12", "scene": "kereta", "who": null, "dur": 1.4},
+  {"id": "g13", "scene": "kereta", "who": "noob", "emo": "teriak", "text": "The ride cart! Go, go, go!", "jeda": 0.3,
+   "arah": "(panicked shouting, desperate, running)"},
+  {"id": "g14", "scene": "pilihan", "who": null, "dur": 6.0}
+ ],
+ "tokoh": {
+  "noob": {"desain": "(young American teenage boy gamer, about seventeen, casual natural voice, relaxed and a little sarcastic)",
+   "ref_teks": "Man, this hotel is so quiet tonight. Nobody is in the lobby, and my room is all the way at the top."},
+  "max": {"desain": "(American teenage boy, about sixteen, energetic, cocky and funny, slightly raspy voice)",
+   "ref_teks": "Dude, trust me, this is going to be the best video ever. We just sneak in, film the rides, and get out."},
+  "hoppy": {"desain": "(deep warm cartoon mascot voice, slow and friendly, like a giant bunny character for kids)",
+   "ref_teks": "Hello there, my little friends! It's me, your best buddy. Are you ready to have some fun today?"}
+ }
+}

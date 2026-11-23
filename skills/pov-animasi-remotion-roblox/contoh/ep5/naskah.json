@@ -1,0 +1,39 @@
+{
+ "judul": "Bloxy Land After Hours - Part 1",
+ "awal": 1.5,
+ "format": "potret",
+ "catatan": "Serial baru: taman hiburan balok yang sudah tutup, maskot kelinci Hoppy. Fiksi orisinal, bahasa Inggris USA. Suara bersih tanpa filter telepon.",
+ "baris": [
+  {"id": "g01", "scene": "gerbang", "who": "max", "emo": "netral", "text": "Come on. The park closed an hour ago. Nobody's here.", "jeda": 0.3,
+   "arah": "(excited teenage boy, mischievous and confident, whispering loudly, grinning)"},
+  {"id": "g02", "scene": "gerbang", "who": "noob", "emo": "takut", "text": "This is a really bad idea, Max.", "jeda": 0.3,
+   "arah": "(nervous teenage boy, hesitant, quiet and worried)"},
+  {"id": "g03", "scene": "komidi", "who": null, "dur": 2.0},
+  {"id": "g04", "scene": "speaker", "who": "park", "emo": "netral", "text": "Welcome to Bloxy Land! The park is now open!", "jeda": 0.4,
+   "arah": "(very cheerful theme park announcer woman, bright and bubbly, too happy)", "fx": "aecho=0.7:0.5:120:0.25"},
+  {"id": "g05", "scene": "max_takut", "who": "max", "emo": "takut", "text": "Okay... that's not funny. Who did that?", "jeda": 0.3,
+   "arah": "(nervous laugh turning scared, voice shaking, looking around)"},
+  {"id": "g06", "scene": "hoppy_jauh", "who": null, "dur": 1.6},
+  {"id": "g07", "scene": "hoppy_jauh", "who": "hoppy", "emo": "netral", "text": "Hi, friends! Want to play a game?", "jeda": 0.4,
+   "arah": "(friendly deep cartoon mascot voice, slow and warm, cheerful but unsettling)", "fx": "aecho=0.7:0.5:90:0.25"},
+  {"id": "g08", "scene": "lampu", "who": null, "dur": 2.4},
+  {"id": "g09", "scene": "lampu", "who": "noob", "emo": "bisik", "text": "It gets closer every time the lights go out...", "jeda": 0.5,
+   "arah": "(terrified whisper, very quiet, breathing fast)"},
+  {"id": "g10", "scene": "hilang", "who": null, "dur": 1.6},
+  {"id": "g11", "scene": "hilang", "who": "noob", "emo": "teriak", "text": "Max? Max!", "jeda": 0.4,
+   "arah": "(panicked shouting, calling out for a friend, voice cracking)"},
+  {"id": "g12", "scene": "belakang", "who": "hoppy", "emo": "bisik", "text": "Tag. You're it.", "jeda": 0.3,
+   "arah": "(deep mascot voice whispering very close, slow, playful and sinister)"},
+  {"id": "g13", "scene": "pilihan", "who": null, "dur": 6.0}
+ ],
+ "tokoh": {
+  "noob": {"desain": "(young American teenage boy gamer, about seventeen, casual natural voice, relaxed and a little sarcastic)",
+   "ref_teks": "Man, this hotel is so quiet tonight. Nobody is in the lobby, and my room is all the way at the top."},
+  "max": {"desain": "(American teenage boy, about sixteen, energetic, cocky and funny, slightly raspy voice)",
+   "ref_teks": "Dude, trust me, this is going to be the best video ever. We just sneak in, film the rides, and get out."},
+  "park": {"desain": "(cheerful American female theme park announcer, bright, bubbly and friendly)",
+   "ref_teks": "Good morning, everyone, and welcome to the happiest park in the world! Please keep your hands inside the ride at all times."},
+  "hoppy": {"desain": "(deep warm cartoon mascot voice, slow and friendly, like a giant bunny character for kids)",
+   "ref_teks": "Hello there, my little friends! It's me, your best buddy. Are you ready to have some fun today?"}
+ }
+}

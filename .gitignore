@@ -1,0 +1,7 @@
+node_modules/
+out/
+sfx_cache/
+vox_*/
+*.mp4
+*.wav
+.DS_Store

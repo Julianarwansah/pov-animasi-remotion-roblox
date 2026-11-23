@@ -1,0 +1,40 @@
+{
+ "judul": "Bloxy Land After Hours - Part 3 (Final)",
+ "awal": 1.5,
+ "format": "potret",
+ "catatan": "Episode terakhir, lanjutan RIDE THE CART OUT: kereta keluar ke bianglala, kabur lewat gerbang, besok paginya maskot baru memakai topi Max. Tanpa kartu pilihan. Fiksi orisinal, bahasa Inggris USA.",
+ "baris": [
+  {"id": "g01", "scene": "kereta_keluar", "who": null, "dur": 1.4},
+  {"id": "g02", "scene": "kereta_keluar", "who": "noob", "emo": "teriak", "text": "Come on, faster! Faster!", "jeda": 0.3,
+   "arah": "(panicked shouting, desperate, riding a fast cart)"},
+  {"id": "g03", "scene": "bianglala", "who": null, "dur": 1.6},
+  {"id": "g04", "scene": "bianglala", "who": "park", "emo": "netral", "text": "Leaving so soon? But the fun has just begun!", "jeda": 0.4,
+   "arah": "(cheerful theme park announcer woman, sweet and too happy, slightly mocking)", "fx": "aecho=0.7:0.5:120:0.25"},
+  {"id": "g05", "scene": "gerbang_lari", "who": "noob", "emo": "teriak", "text": "The gate! It's still open!", "jeda": 0.2,
+   "arah": "(breathless running, hopeful shouting)"},
+  {"id": "g06", "scene": "hoppy_gerbang", "who": null, "dur": 1.4},
+  {"id": "g07", "scene": "hoppy_gerbang", "who": "hoppy", "emo": "netral", "text": "Don't worry. Your friend gets to stay forever.", "jeda": 0.4,
+   "arah": "(deep warm mascot voice, slow, calm and sinister, smiling)", "fx": "aecho=0.7:0.5:90:0.25"},
+  {"id": "g08", "scene": "keluar", "who": "noob", "emo": "teriak", "text": "No! Give him back!", "jeda": 0.5,
+   "arah": "(angry desperate scream, crying out)"},
+  {"id": "g09", "scene": "pagi", "who": null, "dur": 2.4},
+  {"id": "g10", "scene": "pagi", "who": "park", "emo": "netral", "text": "Good morning! Please welcome our brand new mascot!", "jeda": 0.4,
+   "arah": "(bright cheerful theme park announcer woman, morning energy, happy)", "fx": "aecho=0.6:0.4:120:0.2"},
+  {"id": "g11", "scene": "maskot_baru", "who": null, "dur": 1.6},
+  {"id": "g12", "scene": "maskot_baru", "who": "noob", "emo": "bisik", "text": "That's... Max's cap.", "jeda": 0.4,
+   "arah": "(shocked quiet whisper, heartbroken realization)"},
+  {"id": "g13", "scene": "lambai", "who": "max", "emo": "netral", "text": "Want to play a game?", "jeda": 0.5,
+   "arah": "(teenage boy voice, slow and muffled, strangely cheerful and empty, sinister)", "fx": "aecho=0.7:0.5:60:0.25"},
+  {"id": "g14", "scene": "akhir", "who": null, "dur": 4.5}
+ ],
+ "tokoh": {
+  "noob": {"desain": "(young American teenage boy gamer, about seventeen, casual natural voice, relaxed and a little sarcastic)",
+   "ref_teks": "Man, this hotel is so quiet tonight. Nobody is in the lobby, and my room is all the way at the top."},
+  "max": {"desain": "(American teenage boy, about sixteen, energetic, cocky and funny, slightly raspy voice)",
+   "ref_teks": "Dude, trust me, this is going to be the best video ever. We just sneak in, film the rides, and get out."},
+  "park": {"desain": "(cheerful American female theme park announcer, bright, bubbly and friendly)",
+   "ref_teks": "Good morning, everyone, and welcome to the happiest park in the world! Please keep your hands inside the ride at all times."},
+  "hoppy": {"desain": "(deep warm cartoon mascot voice, slow and friendly, like a giant bunny character for kids)",
+   "ref_teks": "Hello there, my little friends! It's me, your best buddy. Are you ready to have some fun today?"}
+ }
+}

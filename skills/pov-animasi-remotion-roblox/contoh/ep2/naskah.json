@@ -1,0 +1,148 @@
+{
+ "judul": "Floor 13 - Part 2",
+ "awal": 1.5,
+ "format": "potret",
+ "catatan": "Lanjutan pilihan PRESS THE ALARM. Fiksi orisinal, bahasa Inggris USA.",
+ "baris": [
+  {
+   "id": "g01",
+   "scene": "alarm",
+   "who": null,
+   "dur": 1.4
+  },
+  {
+   "id": "g02",
+   "scene": "interkom",
+   "who": "desk",
+   "emo": "netral",
+   "text": "Front desk. What's your emergency?",
+   "jeda": 0.2,
+   "arah": "(bored tired middle-aged hotel clerk answering a call, flat and calm)",
+   "fx": "volume=1.5"
+  },
+  {
+   "id": "g03",
+   "scene": "interkom",
+   "who": "noob",
+   "emo": "teriak",
+   "text": "I'm stuck on floor thirteen! Someone's holding the door!",
+   "arah": "(panicked shouting, desperate and fast, out of breath)"
+  },
+  {
+   "id": "g04",
+   "scene": "interkom_diam",
+   "who": "desk",
+   "emo": "netral",
+   "text": "Sir... this hotel doesn't have a floor thirteen.",
+   "jeda": 0.5,
+   "arah": "(confused and slow, long pause, puzzled and a little uneasy)",
+   "fx": "volume=1.5"
+  },
+  {
+   "id": "g05",
+   "scene": "lepas",
+   "who": "lily",
+   "emo": "bisik",
+   "text": "Then who are you talking to?",
+   "jeda": 0.3,
+   "arah": "(creepy calm girl whisper, slow, cold and smiling, sinister)",
+   "fx": "aecho=0.7:0.5:40:0.25,volume=1.5"
+  },
+  {
+   "id": "g06",
+   "scene": "jatuh",
+   "who": null,
+   "dur": 1.2
+  },
+  {
+   "id": "g07",
+   "scene": "jatuh",
+   "who": "noob",
+   "emo": "teriak",
+   "text": "No! Stop! Stop!",
+   "jeda": 0.6,
+   "arah": "(screaming in terror, falling, hysterical and frantic)"
+  },
+  {
+   "id": "g08",
+   "scene": "rem",
+   "who": "noob",
+   "emo": "bisik",
+   "text": "Thirteen... again?",
+   "jeda": 0.3,
+   "arah": "(shocked breathless whisper, shaking, disbelief)"
+  },
+  {
+   "id": "g09",
+   "scene": "buka",
+   "who": null,
+   "dur": 1.6
+  },
+  {
+   "id": "g10",
+   "scene": "lorong_kosong",
+   "who": "noob",
+   "emo": "bisik",
+   "text": "Where did everyone go?",
+   "jeda": 0.4,
+   "arah": "(terrified whisper, very quiet, nervous)"
+  },
+  {
+   "id": "g11",
+   "scene": "catatan",
+   "who": "noob",
+   "emo": "bisik",
+   "text": "Find your room... to leave.",
+   "jeda": 0.4,
+   "arah": "(reading slowly in a scared whisper, confused)"
+  },
+  {
+   "id": "g12",
+   "scene": "lily_jauh",
+   "who": "lily",
+   "emo": "bisik",
+   "text": "Room thirteen thirteen is waiting for you.",
+   "jeda": 0.3,
+   "arah": "(creepy sweet girl voice, slow, singsong and cold, sinister)",
+   "fx": "apad=pad_dur=0.6,aecho=0.8:0.6:70:0.3"
+  },
+  {
+   "id": "g13",
+   "scene": "palka",
+   "who": null,
+   "dur": 1.4
+  },
+  {
+   "id": "g14",
+   "scene": "palka",
+   "who": "noob",
+   "emo": "bisik",
+   "text": "The hatch... it's open.",
+   "jeda": 0.4,
+   "arah": "(scared whisper with a hint of hope, breathing fast)"
+  },
+  {
+   "id": "g15",
+   "scene": "pilihan",
+   "who": null,
+   "dur": 6.0
+  }
+ ],
+ "tokoh": {
+  "noob": {
+   "desain": "(young American teenage boy gamer, about seventeen, casual natural voice, relaxed and a little sarcastic)",
+   "ref_teks": "Man, this hotel is so quiet tonight. Nobody is in the lobby, and my room is all the way at the top."
+  },
+  "lily": {
+   "desain": "(young American girl, about fourteen, soft sweet voice, a little breathy)",
+   "ref_teks": "I lost my friends somewhere in this hotel, and now I can't remember which floor my room is on."
+  },
+  "desk": {
+   "desain": "(middle-aged American man, tired hotel night clerk, deep calm voice, polite)",
+   "ref_teks": "Good evening, this is the front desk. How can I help you tonight? Is everything alright with your room?"
+  },
+  "tiruan": {
+   "pakai": "noob"
+  }
+ }
+}

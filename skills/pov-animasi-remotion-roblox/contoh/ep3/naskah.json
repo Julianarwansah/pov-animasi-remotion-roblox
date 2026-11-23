@@ -1,0 +1,139 @@
+{
+ "judul": "Floor 13 - Part 3",
+ "awal": 1.5,
+ "format": "potret",
+ "catatan": "Lanjutan pilihan CLIMB THROUGH THE HATCH: memanjat lubang lift ke lantai 20. Fiksi orisinal, bahasa Inggris USA.",
+ "baris": [
+  {
+   "id": "g01",
+   "scene": "naik",
+   "who": "noob",
+   "emo": "takut",
+   "text": "Okay. Don't look down. Just climb.",
+   "jeda": 0.3,
+   "arah": "(scared and determined, breathing hard while climbing, shaky voice)"
+  },
+  {
+   "id": "g02",
+   "scene": "atas",
+   "who": null,
+   "dur": 1.4
+  },
+  {
+   "id": "g03",
+   "scene": "atas",
+   "who": "noob",
+   "emo": "netral",
+   "text": "Floor twenty. I can make it.",
+   "jeda": 0.3,
+   "arah": "(breathless, trying to stay brave, quiet hope)"
+  },
+  {
+   "id": "g04",
+   "scene": "bisik",
+   "who": "lift",
+   "emo": "bisik",
+   "text": "Going up?",
+   "jeda": 0.5,
+   "arah": "(calm polite automated elevator voice, slow, eerie and too close)",
+   "fx": "apad=pad_dur=0.5,aecho=0.8:0.7:90:0.35"
+  },
+  {
+   "id": "g05",
+   "scene": "bawah",
+   "who": null,
+   "dur": 1.4
+  },
+  {
+   "id": "g06",
+   "scene": "bawah",
+   "who": "lily",
+   "emo": "bisik",
+   "text": "You forgot to hold the door.",
+   "jeda": 0.3,
+   "arah": "(creepy calm girl whisper, slow, cold and smiling, sinister)",
+   "fx": "aecho=0.8:0.6:80:0.3"
+  },
+  {
+   "id": "g07",
+   "scene": "panjat_cepat",
+   "who": "noob",
+   "emo": "teriak",
+   "text": "No, no, no! Faster!",
+   "jeda": 0.2,
+   "arah": "(panicked screaming, frantic, climbing fast, out of breath)"
+  },
+  {
+   "id": "g08",
+   "scene": "panjat_cepat",
+   "who": null,
+   "dur": 1.4
+  },
+  {
+   "id": "g09",
+   "scene": "pintu20",
+   "who": "noob",
+   "emo": "teriak",
+   "text": "Come on... open!",
+   "jeda": 0.3,
+   "arah": "(straining hard, grunting, desperate effort)"
+  },
+  {
+   "id": "g10",
+   "scene": "lorong20",
+   "who": "noob",
+   "emo": "netral",
+   "text": "Floor twenty... finally.",
+   "jeda": 0.5,
+   "arah": "(exhausted and relieved, breathless, almost laughing)"
+  },
+  {
+   "id": "g11",
+   "scene": "kamar_merah",
+   "who": "tiruan",
+   "emo": "bisik",
+   "text": "Welcome back. I've been waiting.",
+   "jeda": 0.4,
+   "arah": "(creepy slow whisper, eerie and cold, unnaturally calm, sinister)",
+   "fx": "apad=pad_dur=0.6,aecho=0.8:0.6:60:0.3"
+  },
+  {
+   "id": "g12",
+   "scene": "tangan",
+   "who": null,
+   "dur": 1.2
+  },
+  {
+   "id": "g13",
+   "scene": "tangan",
+   "who": "noob",
+   "emo": "teriak",
+   "text": "She's right behind me!",
+   "jeda": 0.4,
+   "arah": "(terrified scream, panicked and breathless)"
+  },
+  {
+   "id": "g14",
+   "scene": "pilihan",
+   "who": null,
+   "dur": 6.0
+  }
+ ],
+ "tokoh": {
+  "noob": {
+   "desain": "(young American teenage boy gamer, about seventeen, casual natural voice, relaxed and a little sarcastic)",
+   "ref_teks": "Man, this hotel is so quiet tonight. Nobody is in the lobby, and my room is all the way at the top."
+  },
+  "lily": {
+   "desain": "(young American girl, about fourteen, soft sweet voice, a little breathy)",
+   "ref_teks": "I lost my friends somewhere in this hotel, and now I can't remember which floor my room is on."
+  },
+  "lift": {
+   "desain": "(calm American female automated elevator voice, clear, polite and robotic)",
+   "ref_teks": "Welcome to Blocky Inn. Doors closing. Please stand clear of the doors and enjoy your stay."
+  },
+  "tiruan": {
+   "pakai": "noob"
+  }
+ }
+}

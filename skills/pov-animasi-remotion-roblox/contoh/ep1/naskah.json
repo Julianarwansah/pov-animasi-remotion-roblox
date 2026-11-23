@@ -1,0 +1,139 @@
+{
+ "judul": "Floor 13 - Part 1",
+ "awal": 1.5,
+ "format": "potret",
+ "catatan": "POV fisheye bergaya Roblox: lift hotel Blocky Inn berhenti di lantai 13 yang tidak ada. Fiksi orisinal, bahasa Inggris USA.",
+ "baris": [
+  {
+   "id": "g01",
+   "scene": "lift",
+   "who": "noob",
+   "emo": "netral",
+   "text": "Floor twenty. Finally, my room.",
+   "jeda": 0.3,
+   "arah": "(tired teenage boy, relieved, yawning a little, mumbling to himself)"
+  },
+  {
+   "id": "g02",
+   "scene": "speaker",
+   "who": "lift",
+   "emo": "netral",
+   "text": "Now arriving at floor thirteen. Please step out.",
+   "jeda": 0.3,
+   "arah": "(calm polite automated elevator announcement, slow and flat, slightly too cheerful)",
+   "fx": "aecho=0.6:0.4:35:0.2,volume=1.4"
+  },
+  {
+   "id": "g03",
+   "scene": "panel",
+   "who": "noob",
+   "emo": "takut",
+   "text": "Wait... this hotel doesn't have a thirteenth floor.",
+   "jeda": 0.3,
+   "arah": "(slow scared realization, quiet shaky voice, confused and frightened)"
+  },
+  {
+   "id": "g04",
+   "scene": "ding",
+   "who": null,
+   "dur": 1.8
+  },
+  {
+   "id": "g05",
+   "scene": "lily",
+   "who": "lily",
+   "emo": "teriak",
+   "text": "Hey! Hold the door! Please!",
+   "arah": "(young girl pleading, out of breath, desperate and scared, loud)"
+  },
+  {
+   "id": "g06",
+   "scene": "lily_tanya",
+   "who": "noob",
+   "emo": "takut",
+   "text": "Why are you standing in the dark?",
+   "arah": "(nervous and suspicious, voice trembling, hesitant)"
+  },
+  {
+   "id": "g07",
+   "scene": "kaki",
+   "who": "lily",
+   "emo": "teriak",
+   "text": "The lights broke! Just let me in!",
+   "jeda": 0.3,
+   "arah": "(begging urgently, voice cracking, impatient and desperate)"
+  },
+  {
+   "id": "g08",
+   "scene": "lorong",
+   "who": null,
+   "dur": 2.0
+  },
+  {
+   "id": "g09",
+   "scene": "tembok",
+   "who": "noob",
+   "emo": "bisik",
+   "text": "Why are they all facing the wall...",
+   "jeda": 0.6,
+   "arah": "(terrified whisper, very quiet, breathing nervously)"
+  },
+  {
+   "id": "g10",
+   "scene": "menoleh",
+   "who": "tiruan",
+   "emo": "bisik",
+   "text": "Floor twenty. Finally, my room.",
+   "jeda": 0.4,
+   "arah": "(creepy slow whisper, eerie and cold, unnaturally calm, sinister)",
+   "fx": "apad=pad_dur=0.6,aecho=0.8:0.6:60:0.3"
+  },
+  {
+   "id": "g11",
+   "scene": "tutup",
+   "who": "lily",
+   "emo": "bisik",
+   "text": "Too late. They saw you.",
+   "jeda": 0.2,
+   "arah": "(creepy calm girl whisper, slow, cold and smiling, sinister)"
+  },
+  {
+   "id": "g12",
+   "scene": "tombol",
+   "who": null,
+   "dur": 2.4
+  },
+  {
+   "id": "g13",
+   "scene": "mundur",
+   "who": "noob",
+   "emo": "teriak",
+   "text": "No, no, no...",
+   "jeda": 0.4,
+   "arah": "(panicked and terrified, breathless, voice shaking, backing away)"
+  },
+  {
+   "id": "g14",
+   "scene": "pilihan",
+   "who": null,
+   "dur": 6.0
+  }
+ ],
+ "tokoh": {
+  "noob": {
+   "desain": "(young American teenage boy gamer, about seventeen, casual natural voice, relaxed and a little sarcastic)",
+   "ref_teks": "Man, this hotel is so quiet tonight. Nobody is in the lobby, and my room is all the way at the top."
+  },
+  "lily": {
+   "desain": "(young American girl, about fourteen, soft sweet voice, a little breathy)",
+   "ref_teks": "I lost my friends somewhere in this hotel, and now I can't remember which floor my room is on."
+  },
+  "lift": {
+   "desain": "(calm American female automated elevator voice, clear, polite and robotic)",
+   "ref_teks": "Welcome to Blocky Inn. Doors closing. Please stand clear of the doors and enjoy your stay."
+  },
+  "tiruan": {
+   "pakai": "noob"
+  }
+ }
+}
