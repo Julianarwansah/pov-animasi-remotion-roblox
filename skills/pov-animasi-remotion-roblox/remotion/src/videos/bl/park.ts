@@ -118,19 +118,19 @@ export const WHEEL: [number, number, number] = [8, 9.5, 30];
 export const HAUNT: [number, number, number] = [-8, 0, 28];
 export const buildPark = (R: THREE.Object3D): Park => {
   // langit + bulan + bintang
-  const sky = new THREE.Mesh(new THREE.SphereGeometry(200, 32, 16), new THREE.ShaderMaterial({
+  const sky = new THREE.Mesh(new THREE.SphereGeometry(100, 32, 16), new THREE.ShaderMaterial({ // radius harus < jarak pandang kamera (120)
     vertexShader: "varying vec3 vP; void main(){ vP = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }",
     fragmentShader: "uniform float uDay; varying vec3 vP; void main(){ float e = clamp(vP.y, 0.0, 1.0); vec3 n = mix(vec3(0.16,0.12,0.30), vec3(0.03,0.04,0.12), pow(e, 0.45)); vec3 d = mix(vec3(0.78,0.90,1.0), vec3(0.36,0.62,0.98), pow(e, 0.6)); gl_FragColor = vec4(mix(n, d, uDay), 1.0); }",
     uniforms: { uDay: { value: 0 } }, side: THREE.BackSide, depthWrite: false,
   }));
   sky.name = "langit"; R.add(sky);
-  const moon = new THREE.Mesh(new THREE.PlaneGeometry(12, 12), new THREE.MeshBasicMaterial({ color: new THREE.Color(2.0, 2.0, 2.2), depthWrite: false }));
-  moon.position.set(-40, 60, 150); moon.lookAt(0, 0, 0); R.add(moon);
+  const moon = new THREE.Mesh(new THREE.PlaneGeometry(7, 7), new THREE.MeshBasicMaterial({ color: new THREE.Color(2.0, 2.0, 2.2), depthWrite: false }));
+  moon.position.set(-24, 36, 86); moon.lookAt(0, 0, 0); R.add(moon);
   const stars: THREE.Mesh[] = [];
   for (let i = 0; i < 80; i++) {
-    const s = new THREE.Mesh(new THREE.PlaneGeometry(0.8, 0.8), new THREE.MeshBasicMaterial({ color: "#e8ecff", depthWrite: false }));
+    const s = new THREE.Mesh(new THREE.PlaneGeometry(0.45, 0.45), new THREE.MeshBasicMaterial({ color: "#e8ecff", depthWrite: false }));
     const a = (hh(i, 1) - 0.5) * 2.6, e = 0.2 + hh(i, 2) * 1.0;
-    s.position.set(Math.sin(a) * Math.cos(e) * 180, Math.sin(e) * 180, Math.cos(a) * Math.cos(e) * 180); s.lookAt(0, 0, 0); R.add(s); stars.push(s);
+    s.position.set(Math.sin(a) * Math.cos(e) * 95, Math.sin(e) * 95, Math.cos(a) * Math.cos(e) * 95); s.lookAt(0, 0, 0); R.add(s); stars.push(s);
   }
   // tanah: rumput berstud + jalan batu
   const stud = (base: string, rep: number) => { const t = canvasTex(256, 256, (g) => {

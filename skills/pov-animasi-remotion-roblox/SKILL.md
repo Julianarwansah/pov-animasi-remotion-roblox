@@ -66,6 +66,9 @@ Contoh lengkap: **Floor 13** (`rbx1`–`rbx4`, lift hotel) dan **Bloxy Land Afte
 - Tokoh yang berjalan diberi lajur tetap dengan jarak tetap; jangan melintas rel/pagar/pintu putar.
 - Cermin palsu: panel kaca transparan + "ruang pantulan" di baliknya berisi tokoh pantulan.
 - Kotak AABB membengkak untuk benda yang diputar (tikungan) → audit memakai verifikasi OBB; tetap periksa temuan dengan gambar diam.
+- Bola langit harus lebih kecil dari jarak pandang kamera (`far` 120 → langit 100 m, bulan/bintang ≤ 95 m); kalau tidak, langit tidak tergambar (hitam polos).
+- Di kamera yang menghadap +z, sumbu **+x tampil di kiri layar**. Target tangan kanan POV di dunia harus di sisi -x, kalau tidak tangan bersilang.
+- Adegan pembuka episode terakhir jangan memperlihatkan twist akhir (pakai momen tegang di tengah).
 - Suara tokoh: VoxCPM2 rancang suara dasar sekali, kloning per baris + arahan emosi bahasa Inggris. Baris kurang pas: ganti `seed`/`arah`, hapus klipnya, jalankan lagi.
 
 ## Lisensi pihak ketiga

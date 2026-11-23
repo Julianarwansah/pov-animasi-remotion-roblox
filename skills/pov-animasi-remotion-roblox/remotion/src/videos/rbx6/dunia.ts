@@ -53,7 +53,7 @@ export class World {
     for (const x of [-0.26, 0.26]) box(sk, 0.06, 0.7, 0.06, bone, x, 1.2, 0); for (const x of [-0.1, 0.1]) box(sk, 0.07, 0.8, 0.07, bone, x, 0.45, 0);
     const cof = box(R, 0.7, 2.0, 0.35, "#4a2a1a", -1.35, 1.0, 7.4); cof.rotation.y = Math.PI / 2;
     box(R, 0.08, 0.6, 0.06, "#c79a3a", -1.15, 1.3, 7.4); box(R, 0.32, 0.08, 0.06, "#c79a3a", -1.15, 1.45, 7.4);
-    this.ghost.position.set(-0.85, 2.45, 10.2); this.ghost.scale.setScalar(0.8); R.add(this.ghost);
+    this.ghost.position.set(-0.85, 2.45, 10.2); this.ghost.scale.setScalar(0.8); this.ghost.rotation.y = Math.PI; // wajah ke kamera R.add(this.ghost);
     const sheet = new THREE.Mesh(new THREE.ConeGeometry(0.42, 1.2, 10), new THREE.MeshToonMaterial({ color: "#f4f2ff", gradientMap: RAMP })); sheet.position.y = -0.5; this.ghost.add(sheet);
     ball(this.ghost, 0.3, "#f4f2ff", 0, 0.05, 0); for (const x of [-0.1, 0.1]) { const e = ball(this.ghost, 1, "#0a0a10", x, 0.08, 0.26); e.scale.set(0.05, 0.07, 0.02); }
     box(R, 0.02, 0.4, 0.02, "#222", -0.85, 2.8, 10.2);
@@ -111,7 +111,7 @@ export class World {
   update(f: number, cam: THREE.PerspectiveCamera) {
     applyCam(cam, camAt(f));
     const t = f / FPS;
-    this.ghost.rotation.z = 0.15 * Math.sin(t * 1.3); this.ghost.position.y = 2.45 + 0.05 * Math.sin(t * 2);
+    this.ghost.rotation.set(0, Math.PI, 0.15 * Math.sin(t * 1.3)); this.ghost.position.y = 2.45 + 0.05 * Math.sin(t * 2);
     // kedipan lampu saat Max berubah jadi Hoppy dan saat "Found you"
     const flick = (f >= S0("g09") && f < S0("g09") + 14 && Math.floor(f / 2) % 2 === 0) || (f >= S0("g11") && hh(Math.floor(f / 3), 4) > 0.7);
     this.mazeLights.forEach((l) => (l.intensity = flick ? 0.1 : 1.6));
@@ -206,7 +206,7 @@ const povAt = (fIn: number, t: number, toLocal: (v: V3) => V3): Pov => {
       const seated = f >= S0("g13") + 14;
       if (!seated) return povUp(t, 3);
       const cz = CART[2] + cartGo(f) + 0.7;
-      return { R: toLocal([RAIL_X + 0.28, 0.9, cz - 0.2]), L: toLocal([RAIL_X - 0.28, 0.9, cz - 0.2]) };
+      return { R: toLocal([RAIL_X - 0.28, 0.9, cz - 0.2]), L: toLocal([RAIL_X + 0.28, 0.9, cz - 0.2]) }; // +x tampil di kiri layar
     }
     default: return povUp(t, 3);
   }

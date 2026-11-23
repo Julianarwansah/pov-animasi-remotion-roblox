@@ -10,7 +10,7 @@ export const T = makeTL(TL);
 const { S0, E0, sceneAt, mouthAt } = T;
 export const FREEZE = S0("g14") - 1;
 export const COLD = Math.max(0, S0("g01") - 4);
-export const coldFrame = (f: number) => Math.min(FREEZE - 1, S0("g13") + 20 + Math.floor(f * 0.4));
+export const coldFrame = (f: number) => Math.min(FREEZE - 1, S0("g07") + 20 + Math.floor(f * 0.4)); // Hoppy di gerbang (tanpa bocoran akhir)
 
 // lintasan kereta: keluar pintu rumah hantu (+x), di depan bianglala, belok ke -z di samping jalan utama
 const TRACK = new THREE.CatmullRomCurve3([
@@ -178,7 +178,7 @@ export const camAt = (fIn: number): Cam => {
 const povAt = (fIn: number, t: number, toLocal: (v: V3) => V3, cart: THREE.Group): Pov => {
   const f = Math.min(fIn, FREEZE), sc = sceneAt(f);
   const grip = (): Pov => {
-    const r = cart.localToWorld(new THREE.Vector3(0.26, 1.04, 0.36)), l = cart.localToWorld(new THREE.Vector3(-0.26, 1.04, 0.36));
+    const r = cart.localToWorld(new THREE.Vector3(-0.26, 1.04, 0.36)), l = cart.localToWorld(new THREE.Vector3(0.26, 1.04, 0.36)); // +x lokal tampil di kiri
     return { R: toLocal([r.x, r.y, r.z]), L: toLocal([l.x, l.y, l.z]) };
   };
   switch (sc) {
